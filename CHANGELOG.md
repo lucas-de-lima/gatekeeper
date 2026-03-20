@@ -30,6 +30,7 @@ Este arquivo trabalha em **dupla com `project-memory.md`**:
   - go-playground/validator (v10.30.1) para validação de structs.
   - Testify (v1.11.1) para testes e assertions.
   - google/uuid (v1.6.0) para geração de UUIDs.
+- Adicionado documento de estratégia de testes em `docs/Gatekeeper - Testing Strategy.md`.
 
 ### Planejado
 - Implementar setup de Uber Dig e Viper em `cmd/api`.
