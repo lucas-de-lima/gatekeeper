@@ -58,3 +58,10 @@ Layers:
 ## Security
 - Never trust user input
 - Always validate external data
+
+## Shared Memory Reference
+Before any code changes, read:
+- `.github/instructions/project-memory.md`
+- `CHANGELOG.md`
+
+The memory file is the primary shared source for project state, decisions, and ongoing TODOS. Keep this instruction file minimal and point to it for detailed context.

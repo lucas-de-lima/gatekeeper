@@ -2,7 +2,7 @@
 
 Formato: [semver] e seções por data/versão em ordem decrescente.
 
-## 📌 Important: Relationship with .vscode/instructions/project-memory.md
+## 📌 Important: Relationship with .github\instructions\project-memory.md
 
 Este arquivo trabalha em **dupla com `project-memory.md`**:
 - **CHANGELOG.md:** Registro técnico detalhado de todas as mudanças (commits, dependências, novos arquivos).
@@ -17,8 +17,15 @@ Este arquivo trabalha em **dupla com `project-memory.md`**:
 ## [Unreleased]
 
 ### Adicionado
-- Documento de memória do projeto em `.vscode/instructions/project-memory.md`.
+- Documento de memória do projeto em `.github\instructions\project-memory.md`.
 - Changelog inicial em `CHANGELOG.md`.
+- Implementação do Épico 01 (fundação/infraestrutura):
+  - `cmd/api/main.go`, `cmd/api/config/config.go`
+  - middleware de request/health
+  - logger estruturado (slog JSON) e configuração (Viper)
+  - estrutura inicial de diretórios `internal/entity`, `internal/usecase`, `internal/infra`
+  - Makefile, docker-compose, migrations base e sqlc placeholder
+  - testes e lint totalmente rodados (`go test ./...`, `golangci-lint run`)
 - Atualização da stack em `docs/Gatekeeper - Architectural Blueprin.md` para Go 1.26, Logrus, Viper, Dig, Validator, Testify/Mockery.
 - Atualização de padrões em `docs/Gatekeeper - Engineering Standards.md` com logging e testes novos.
 - Instalação de dependências do MVP:

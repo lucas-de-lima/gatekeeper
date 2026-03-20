@@ -51,10 +51,12 @@ jobs:
       - name: Install dependencies
         run: go mod tidy
 
-      - name: Run linter
-        uses: golangci/golangci-lint-action@v6
-        with:
-          version: v1.55.2
+      - name: Install and Run Linter (Natively)
+        run: |
+          echo "Compilando golangci-lint com Go 1.26..."
+          go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest
+          echo "Executando o linter..."
+          $(go env GOPATH)/bin/golangci-lint run ./...
 
       - name: Build
         run: go build ./...
