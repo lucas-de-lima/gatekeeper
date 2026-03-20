@@ -1,0 +1,17 @@
+{
+  "editor.formatOnSave": true,
+
+  "go.useLanguageServer": true,
+
+  "files.exclude": {
+    "**/vendor": true
+  },
+
+  "search.exclude": {
+    "**/vendor": true
+  },
+
+  "github.copilot.enable": {
+    "*": true
+  }
+}

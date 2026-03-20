@@ -55,12 +55,15 @@ O fluxo de dependência deve ser sempre: **Externo -> Interno**.
 
 | Componente | Tecnologia | Justificativa |
 |------------|------------|---------------|
-| Language | Go 1.23+ | Performance, tipagem forte, concorrência simples. |
+| Language | Go 1.26.0 | Performance, tipagem forte, concorrência simples. Suporte a generics e features modernas. |
 | Database | PostgreSQL 16 | Relacional, robusto, suporte a JSONB se necessário. |
 | Router | go-chi/chi | Leve, idiomatico, excelente suporte a middlewares (context). |
 | ORM/Query | sqlc | Gera código Go type-safe a partir de SQL puro. Performance de raw SQL. |
-| Logging | log/slog | Padrão da biblioteca (Go 1.21+), estruturado, zero alloc. |
-| Config | godotenv | Simplicidade (12-factor app). |
+| Logging | Logrus (sirupsen/logrus) | Estruturado com hooks, níveis e formatação JSON/Texto. Flexível para produção e debug. |
+| Config | Viper (spf13/viper) | Suporte a múltiplas fontes (env, YAML), live reload. Mais avançado que godotenv. |
+| DI | Uber Dig (uber-go/dig) | Injeção automática de dependências via reflexão. Simplifica wiring e facilita testes. |
+| Validation | go-playground/validator | Validação de structs com tags. Essencial para segurança de inputs. |
+| Testing | Testify (stretchr/testify) + Mockery (vektra/mockery) | Assertions e Table Driven Tests; geração automática de mocks para interfaces. |
 | Migration | golang-migrate | Versionamento de schema agnóstico. |
 
 ## 4. Design Patterns Chave
