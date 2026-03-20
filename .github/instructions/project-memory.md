@@ -34,8 +34,8 @@ Este arquivo trabalha em **dupla com `CHANGELOG.md`**:
 - `docs/Gatekeeper - Engineering Standards.md` atualizado com novas diretrizes de logging, testes e ferramental.
 
 ## 2026-03-19: Status do roadmap
-- Épico 01: fundação / infraestrutura em andamento (setup do projeto, DI, config, logger, migrations, sqlc).
-- Épico 02: gestão de acesso planejado (autenticação JWT, middleware tenant_id).
+- Épico 01: fundação / infraestrutura concluído (setup do projeto, DI, config, logger, migrations, sqlc, middleware request/health, testes e lint concluídos).
+- Épico 02: gestão de acesso em preparação (autenticação JWT, middleware tenant_id).
 - Épico 03: cadastro de moradores/unidades planejado (CRUD e validação).
 - Épico 04: processo de recebimento em planejamento (orders, notificações).
 
