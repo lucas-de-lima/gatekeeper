@@ -1,3 +1,5 @@
+version: "2"
+
 run:
   timeout: 5m
 
@@ -9,14 +11,15 @@ linters:
     - unused
     - ineffassign
     - gocyclo
+  settings:
+    gocyclo:
+      min-complexity: 15
+  exclusions:
+    rules:
+      - path: _test\.go
+        linters:
+          - gocyclo
+
+formatters:
+  enable:
     - gofmt
-
-linters-settings:
-  gocyclo:
-    min-complexity: 15
-
-issues:
-  exclude-rules:
-    - path: _test\.go
-      linters:
-        - gocyclo
