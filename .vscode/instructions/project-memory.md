@@ -40,8 +40,17 @@ Este arquivo é a fonte canônica de estado e aprendizado para agentes de IA e h
 - Commit: `build: install MVP dependencies`
 - go.mod e go.sum commitados com sucesso.
 
+## 2026-03-19: Correção de go.mod e go.sum
+- Identificado: go.sum estava vazio após primeira tentativa de instalação.
+- Causa: Erro durante `go install` de CLI tools interferiu no processo.
+- Solução: Re-executar `go get -u` com todas as dependências do MVP em um comando único.
+- Resultado: go.mod e go.sum agora com 44 dependências totalmente resolvidas e lockadas.
+- Commit: `fix: properly install and lock MVP dependencies in go.mod and go.sum`
+- Verificação: `go mod verify` passou com sucesso.
+
 ## 2026-03-19: Lições aprendidas
 - A definição precisa de ferramentas (Logrus, Dig, Viper etc.) evita ambiguidade na especificação e facilita desenvolvimento rápido.
 - Priorização: MVP lean antes de trocar para observabilidade completa.
 - Dependências instaladas em paralelo aceleram a inicialização do projeto.
-- CLI tools (sqlc, mockery, migrate, golangci-lint) devem ser instaladas via go install (não no go.mod).
+- CLI tools (sqlc, mockery, migrate, golangci-lint) devem ser instaladas via `go install` DEPOIS de estabelecer go.mod com dependências principais.
+- **Importante:** Executar instalação de dependências do módulo em um único comando `go get` é mais confiável que múltiplos `go get` em paralelo.
