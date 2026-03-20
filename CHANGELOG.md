@@ -2,6 +2,18 @@
 
 Formato: [semver] e seções por data/versão em ordem decrescente.
 
+## 📌 Important: Relationship with .vscode/instructions/project-memory.md
+
+Este arquivo trabalha em **dupla com `project-memory.md`**:
+- **CHANGELOG.md:** Registro técnico detalhado de todas as mudanças (commits, dependências, novos arquivos).
+- **project-memory.md:** Síntese temporal com decisões, aprendizados, e referências cruzadas a este changelog.
+
+**Prática recomendada:**
+1. Adicione mudanças técnicas aqui com precisão (versões exatas, commits, arquivos modificados).
+2. Para reflexões de design, decisões arquiteturais ou lições aprendidas, adicione correspondente em project-memory.md.
+3. Cross-link: ao documentar em project-memory.md, referencie a versão/seção do CHANGELOG (ex: "Ver [Unreleased] para detalhes").
+4. Esta dupla mantém rastreabilidade completa: CHANGELOG para o QUE, project-memory para o POR QUE.
+
 ## [Unreleased]
 
 ### Adicionado

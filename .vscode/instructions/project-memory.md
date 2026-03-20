@@ -2,6 +2,18 @@
 
 Este arquivo é a fonte canônica de estado e aprendizado para agentes de IA e humanos que trabalham no projeto.
 
+## 📌 Important: Relationship with CHANGELOG.md
+
+Este arquivo trabalha em **dupla com `CHANGELOG.md`**:
+- **CHANGELOG.md:** Registro detalhado de TODAS as mudanças de código/docs (commits, adições, correções).
+- **project-memory.md:** Síntese temporal de **decisões, aprendizados e estado** do projeto, com referências ao CHANGELOG para detalhes técnicos.
+
+**Prática recomendada:**
+1. Quando adicionar uma entrada aqui, referencie o commit/seção no CHANGELOG (ex: "Ver CHANGELOG [Unreleased] para detalhes de implementação").
+2. O CHANGELOG mantém a verdade sobre O QUE foi feito; esta memória mantém POR QUE foi feito e LIÇÕES aprendidas.
+3. Mantenha esta memória concisa; detalhes técnicos vão para CHANGELOG.
+4. Atualize ambos em conjunto após sprints ou marcos significativos.
+
 ## 2026-03-19: Início e definição do escopo
 - Projeto: Gatekeeper, SaaS de gestão de encomendas multi-tenant para portarias.
 - Arquitetura definida: monólito modular (Clean Architecture).
@@ -51,6 +63,7 @@ Este arquivo é a fonte canônica de estado e aprendizado para agentes de IA e h
 ## 2026-03-19: Lições aprendidas
 - A definição precisa de ferramentas (Logrus, Dig, Viper etc.) evita ambiguidade na especificação e facilita desenvolvimento rápido.
 - Priorização: MVP lean antes de trocar para observabilidade completa.
-- Dependências instaladas em paralelo aceleram a inicialização do projeto.
+- Prática de Documentação: Manter project-memory.md e CHANGELOG.md sincronizados e com cross-references garante rastreabilidade completa sem redundância.
 - CLI tools (sqlc, mockery, migrate, golangci-lint) devem ser instaladas via `go install` DEPOIS de estabelecer go.mod com dependências principais.
 - **Importante:** Executar instalação de dependências do módulo em um único comando `go get` é mais confiável que múltiplos `go get` em paralelo.
+  - Ver [CHANGELOG Unreleased](../../../CHANGELOG.md) para lista exata de versões instaladas.
