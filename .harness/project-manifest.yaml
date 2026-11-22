@@ -1,0 +1,8 @@
+schema_version: 1
+workspace_kind: managed_target
+project_id: gatekeeper
+harness_version: 0.2.0
+installation_state: analysis_in_progress
+target_work_mode: target_discovery
+architecture_baseline_ref: null
+active_request_id: gatekeeper-brainstorm-20261121

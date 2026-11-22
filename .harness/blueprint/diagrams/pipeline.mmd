@@ -1,0 +1,30 @@
+flowchart TD
+  IN[User Request] --> MODE{Install, Request, Resume, Reconcile?}
+  MODE -->|Install / Legacy| DISC[AI-led Discovery]
+  DISC --> ASIS[Record As-Is Baseline, Pros, Cons, Evidence]
+  ASIS -->|No change request| WAIT[Persist Handoff and Wait]
+  ASIS -->|Change request exists| PROBLEM[Problem and Product Intent]
+  MODE -->|Project Request / Resume| STATE[Read Manifest, Canonical Artifacts, Run Events]
+  STATE --> PROBLEM
+  PROBLEM --> COMPOSE[Master Composes and Validates Dynamic Pipeline]
+  COMPOSE --> ARCH[Architecture Specialists: Alternatives and Recommendation]
+  ARCH --> APPROVAL{Lucas selects / approves baseline?}
+  APPROVAL -->|No / revise| ARCH
+  APPROVAL -->|Yes| BACKLOG[Backlog Specialists: Epic, Feature, Story, Task]
+  BACKLOG --> ENG[Engineering Specialists: Contracts and Technical Design]
+  ENG --> DEV[Development Specialists: Test First, Implement, Verify]
+  DEV --> QA[Independent Review, QA, Integration/E2E]
+  QA -->|Fail| DEV
+  QA -->|Pass| HOMOLOG[Prepare Homologation Evidence]
+  HOMOLOG --> CLIENT{Homologation approved?}
+  CLIENT -->|No / changes| BACKLOG
+  CLIENT -->|Yes, GMUD not required| STOP[Handoff and Stop Before Production]
+  CLIENT -->|Yes, GMUD required| GMUD[Prepare and Record Post-Homologation GMUD]
+  GMUD -->|Pending / rejected| WAIT
+  GMUD -->|Authorized| STOP
+  ENG -->|Architecture conflict| ESC[Engineering to Architect Escalation]
+  DEV -->|Architecture conflict| ESC
+  ESC --> SOLVE[Architect supplies evidence and proposed solution]
+  SOLVE --> REOPEN{Lucas authorizes reopening?}
+  REOPEN -->|No| WAIT
+  REOPEN -->|Yes| ARCH

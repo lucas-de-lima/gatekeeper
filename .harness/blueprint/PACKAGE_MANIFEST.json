@@ -1,0 +1,193 @@
+﻿{
+    "package":  "portable-engineering-harness-blueprint",
+    "package_version":  "1.0.0",
+    "kind":  "documentation-blueprint",
+    "contains_implementation_code":  false,
+    "files":  [
+                  {
+                      "path":  "01_PRODUCT_VISION_AND_REQUIREMENTS.md",
+                      "bytes":  11055,
+                      "sha256":  "cdcff28d601a10bc8dcc9487c5693ca7196cc8883816b52278cc5959162a47f2"
+                  },
+                  {
+                      "path":  "02_ARCHITECTURE.md",
+                      "bytes":  9213,
+                      "sha256":  "fd724387b28acbcb5d54a102b1a249d93c4d6b4632a099c52d8b4868da236a0c"
+                  },
+                  {
+                      "path":  "03_E2E_PIPELINE.md",
+                      "bytes":  11037,
+                      "sha256":  "ffc91bbcbd7386056575e90f2736b9e40b25205bb064d9664562f9ca7e171abe"
+                  },
+                  {
+                      "path":  "04_AI_FIRST_ONBOARDING.md",
+                      "bytes":  8874,
+                      "sha256":  "5ffc4a85ad569b3d43904a600c6ee0ab08674a401978616f0d17edd5c5025a26"
+                  },
+                  {
+                      "path":  "05_COMPONENT_INTEGRATION_CATALOG.md",
+                      "bytes":  14041,
+                      "sha256":  "69ecfe5d5708382a37efbd6d713077c9123cb09726eeda03c47f323a5bbbc46e"
+                  },
+                  {
+                      "path":  "06_CONTRACTS_AND_ARTIFACTS.md",
+                      "bytes":  7564,
+                      "sha256":  "f24ce4d74f3ad699bc7bad37d800844e610206fd982a799b95b109186fbf6623"
+                  },
+                  {
+                      "path":  "07_PORTABILITY_AND_VERSIONING.md",
+                      "bytes":  7425,
+                      "sha256":  "c2985d7718163ca3a58bdee48af720d8126bc18f9f423bff3ee152907a49745a"
+                  },
+                  {
+                      "path":  "08_EXECUTION_POLICIES.md",
+                      "bytes":  4791,
+                      "sha256":  "acd60689d6c51c3ec92779f10800dd625d2f54a366d4c622cb3734b529ce37ce"
+                  },
+                  {
+                      "path":  "09_OBSERVABILITY_EVALUATION_AND_LEARNING.md",
+                      "bytes":  5870,
+                      "sha256":  "af9ab8bf228c9c7360d1a4cf335440b6e47c350d031d231a96470aa2d41d97be"
+                  },
+                  {
+                      "path":  "10_IMPLEMENTATION_AND_ACCEPTANCE.md",
+                      "bytes":  8367,
+                      "sha256":  "5f870b4ee65401e74845159ee341a8d8c2191ed7523a875c48c39f8cec3f6872"
+                  },
+                  {
+                      "path":  "11_DECISIONS_AND_OPEN_ITEMS.md",
+                      "bytes":  5352,
+                      "sha256":  "2f05f29523683cf8407ffb894c20382a7878db217fa47ed4e5bd6cb6bc7d5345"
+                  },
+                  {
+                      "path":  "12_GLOSSARY.md",
+                      "bytes":  3619,
+                      "sha256":  "0d1cc0ddb8d7fe8f96859b72bee2076fbfd70dce718afa3549d7bdab86f29a61"
+                  },
+                  {
+                      "path":  "13_LUCAS_PRODUCT_VISION_AND_DECISIONS.md",
+                      "bytes":  27679,
+                      "sha256":  "f28fa243f658dcd563f00d13f1d025aacf8d7ced83879396785118b958a2dc2b"
+                  },
+                  {
+                      "path":  "14_ROTEIRO_DE_SESSOES_E_INICIO_DA_IMPLEMENTACAO.md",
+                      "bytes":  13038,
+                      "sha256":  "5b898e68ff17423a212929d6f9e8f9918373e54d4c936e312aa61a5dacb8755e"
+                  },
+                  {
+                      "path":  "15_MODELO_DE_EXECUCAO_E_ADAPTERS.md",
+                      "bytes":  9157,
+                      "sha256":  "bd513d0b08686135b6340093527bec83b60b4bebc57202477c068fc01922512d"
+                  },
+                  {
+                      "path":  "16_PILARES_AGENTES_E_PIPELINES.md",
+                      "bytes":  9086,
+                      "sha256":  "2a103eb322fb604e678d57aab608e413aa08f71a31c300fcf4b77df3f5e7364e"
+                  },
+                  {
+                      "path":  "17_CICLO_DE_VIDA_E_GOVERNANCA.md",
+                      "bytes":  9356,
+                      "sha256":  "2e0f3869c8d433c0d7e6fdcd169a2610618cea5bc24ecdf298363b405719f69a"
+                  },
+                  {
+                      "path":  "18_MEMORIA_E_CONTRATOS_DE_ARTEFATOS.md",
+                      "bytes":  7965,
+                      "sha256":  "84919c7206d64aa6f0630b651a9c6f467162f3d2e6c2fe391b04fcae3c67b6e0"
+                  },
+                  {
+                      "path":  "19_INTEGRACOES_E_ARQUITETURA_DE_CONHECIMENTO.md",
+                      "bytes":  10758,
+                      "sha256":  "ece61904a4260a62b78d87fb567b15bd78163346c1ed689e175c864ebd5c3772"
+                  },
+                  {
+                      "path":  "20_POLITICA_DE_SEGURANCA_PORTABILIDADE_E_DEPENDENCIAS.md",
+                      "bytes":  7270,
+                      "sha256":  "e7693eaf20290481e71905d6107b641f95113103679ec3f35f3cedb892037dbf"
+                  },
+                  {
+                      "path":  "21_ARQUITETURA_INTEGRADA_E_PLANO_DE_IMPLEMENTACAO.md",
+                      "bytes":  16339,
+                      "sha256":  "dfdd89ebcc7bb052c4b6c057e0b03e41ca6f0e402fe62bab4b9751f8834254b6"
+                  },
+                  {
+                      "path":  "22_PLANO_DE_AMARRACAO_E_INTEGRACAO_FUNCIONAL.md",
+                      "bytes":  18659,
+                      "sha256":  "868ce45a303f0f4e2ade7f6a61bdbea4ba884d57108c1f3303379e349ab6329c"
+                  },
+                  {
+                      "path":  "23_IDENTIDADE_DO_WORKSPACE_E_MODOS_DE_TRABALHO.md",
+                      "bytes":  10295,
+                      "sha256":  "7fc51993773fd1ff76af720e4c6b0034b3fd35156e2da041ba24e0bf830abbff"
+                  },
+                  {
+                      "path":  "24_PLANO_MESTRE_DE_CONSTRUCAO_DO_HARNESS.md",
+                      "bytes":  32806,
+                      "sha256":  "8bfb30b42ebe4b83b6b1650e725eda14468673d16bc238de5b9cf20baae95550"
+                  },
+                  {
+                      "path":  "AGENT_START_HERE.md",
+                      "bytes":  11006,
+                      "sha256":  "e42118fd6ac98d6e8959939988d48fbf2825adb4af9667f97781a461824f2de7"
+                  },
+                  {
+                      "path":  "AGENTS.md",
+                      "bytes":  4885,
+                      "sha256":  "fee83bfc234127655bc3fce93ddc515c3e1024c2ffb49c4323fca9c6118a3105"
+                  },
+                  {
+                      "path":  "BLUEPRINT_STATUS.yaml",
+                      "bytes":  562,
+                      "sha256":  "961868a713ca3ca435ddece1fe63e6dcc8ac7a446a765a288a7e4273aac97398"
+                  },
+                  {
+                      "path":  "diagrams/architecture.mmd",
+                      "bytes":  1307,
+                      "sha256":  "cca235397b0669b7c651d70a63c43a6f48faa2a3bf25b11882b1464f758f1229"
+                  },
+                  {
+                      "path":  "diagrams/onboarding.mmd",
+                      "bytes":  949,
+                      "sha256":  "8f2f4bda7ee1f1feff5b876af4cbc358b9c8106c87d56c7a18c9577cf07ec3eb"
+                  },
+                  {
+                      "path":  "diagrams/pipeline.mmd",
+                      "bytes":  1594,
+                      "sha256":  "d970c93422eacbc25560ec01d272957be4a92a62f4c89ff0ff7810150025070a"
+                  },
+                  {
+                      "path":  "examples/AI_FIRST_BOOTSTRAP_PROMPT.md",
+                      "bytes":  3955,
+                      "sha256":  "f56849ed045320285cd431a94d1bf982474cf8bee6bcfcbe1e614ee58ba2c709"
+                  },
+                  {
+                      "path":  "LOG.md",
+                      "bytes":  14528,
+                      "sha256":  "64aa77c8eef4b62e55ca50031f4238dafaeda37c6b86cc2106d8bd62c3249b6e"
+                  },
+                  {
+                      "path":  "MEMORY.md",
+                      "bytes":  11293,
+                      "sha256":  "12d53fc26a0ce6079e4bf88aabaa6418c8f39a0b70144fe52be9f705e1166e88"
+                  },
+                  {
+                      "path":  "README.md",
+                      "bytes":  10113,
+                      "sha256":  "5e47ff571e388673eb2191521d63b57cbe85fa0af440f3520d761d8f5eb97a93"
+                  },
+                  {
+                      "path":  "references/INTEGRATION_NOTES.md",
+                      "bytes":  6451,
+                      "sha256":  "a26efd7f99d5de2fdd8f5c7d1e37cc2d39297ff32154460d37ee5115f278da1a"
+                  },
+                  {
+                      "path":  "references/SOURCE_CATALOG.md",
+                      "bytes":  6080,
+                      "sha256":  "417eef7b6bf0061eed0d79e648e64b869b9c2dc09e09316c2158579e061ea9f1"
+                  },
+                  {
+                      "path":  "25_VALIDACAO_AUTONOMA_DE_PROJETOS.md",
+                      "bytes":  4859,
+                      "sha256":  "e582f0f1013e2ffdbb5409bf4e1b266d08b86c1fbcf3d0b806517833bcaa0b32"
+                  }
+              ]
+}

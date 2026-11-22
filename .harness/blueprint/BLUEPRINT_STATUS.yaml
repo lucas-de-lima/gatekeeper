@@ -1,0 +1,13 @@
+schema_version: 1
+workspace_kind: blueprint_package
+product_id: portable-engineering-harness
+product_status: ready_for_target_use
+implementation_status: complete
+work_mode_default: blueprint_maintenance
+harness_release_state: ready_for_target_use
+release_version: "0.2.0"
+active_build_plan: 24_PLANO_MESTRE_DE_CONSTRUCAO_DO_HARNESS.md
+active_work_item: null
+next_required_work_item: null
+next_required_work: Maintain the 0.2.0 release and complete evidence-backed live provider verification; no H9/H10 work exists.
+status_updated_at: "2026-11-21T21:25:36-03:00"

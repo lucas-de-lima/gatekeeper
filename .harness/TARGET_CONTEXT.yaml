@@ -1,0 +1,9 @@
+schema_version: 1
+workspace_kind: managed_target
+project_id: gatekeeper
+harness_release: 0.2.0
+source_blueprint_copy: .harness/blueprint
+target_work_mode: target_discovery
+run_id: gatekeeper-brainstorm-20261121
+status: waiting_for_request
+canonical_authority: target-local-memory

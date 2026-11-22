@@ -1,0 +1,31 @@
+{
+    "schema_version":  1,
+    "run_id":  "gatekeeper-onboarding-20261122T024757Z",
+    "workspace_kind":  "managed_target",
+    "project_id":  "gatekeeper",
+    "work_mode":  "target_discovery",
+    "status":  "waiting_for_request",
+    "started_at":  "2026-11-22T02:47:57Z",
+    "objective":  "Validate target-local bootstrap and preserve brainstorming-only status.",
+    "checks":  {
+                   "git_root":  "M:\\Projetos\\gatekeeper",
+                   "commit":  "84015564121b2b4617ae0fcc9ce4c7b7b0dc0048",
+                   "remote":  "git@github.com:lucas-de-lima/gatekeeper.git",
+                   "untracked_or_modified_count":  1,
+                   "target_project_manifest":  true,
+                   "blueprint_copy_present":  true,
+                   "blueprint_file_count":  39,
+                   "brainstorming_doc_count":  5,
+                   "brainstorming_documents":  [
+                                                   "Gatekeeper - Architectural Blueprin.md",
+                                                   "Gatekeeper - Database Schema.md",
+                                                   "Gatekeeper - Engineering Standards.md",
+                                                   "Gatekeeper - MVP Backlog \u0026 Roadmap.md",
+                                                   "Gatekeeper - Product Scope \u0026 Defini.md"
+                                               ],
+                   "executable_source_present":  false,
+                   "status":  "waiting_for_request",
+                   "result":  "completed",
+                   "implementation_started":  false
+               }
+}

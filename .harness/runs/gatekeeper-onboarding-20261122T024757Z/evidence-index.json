@@ -1,0 +1,15 @@
+{
+    "run_id":  "gatekeeper-onboarding-20261122T024757Z",
+    "evidence":  [
+                     {
+                         "location":  "run.json",
+                         "sha256":  "4104263d0b985c297fc043b597431d27a5c9636c7966f4451982bfafcc343818",
+                         "result":  "observed"
+                     },
+                     {
+                         "location":  "events.jsonl",
+                         "sha256":  "e753df443df55b36ed3b03b25b8686b07a816f62ffa60b28f3e5223875f0fbfc",
+                         "result":  "observed"
+                     }
+                 ]
+}

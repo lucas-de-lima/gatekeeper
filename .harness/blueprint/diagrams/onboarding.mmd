@@ -1,0 +1,17 @@
+flowchart TD
+  START[First Master Invocation] --> SIGNAL[Read User Mode / Toggle]
+  SIGNAL --> MANIFEST[Read Manifest, Artifacts, Timestamps, Runs]
+  MANIFEST --> RECONCILE{Does Persisted State Confirm Mode?}
+  RECONCILE -->|No / mismatch| RESOLVE[Reconcile Without Overwriting Existing Work]
+  RECONCILE -->|Yes| CLASSIFY{New, Legacy, Installed?}
+  RESOLVE --> CLASSIFY
+  CLASSIFY -->|New| NEW[Discover Problem and Project Context]
+  CLASSIFY -->|Legacy| LEGACY[Progressive As-Is Inspection]
+  CLASSIFY -->|Installed| REQUEST[Read Request and Resume State]
+  LEGACY --> BASELINE[Record Architecture, Pros, Cons, Comments, Evidence]
+  BASELINE --> CHANGE{Was a Change Request Included?}
+  CHANGE -->|No| WAIT[Persist Artifacts, Timestamp, Log, Next Step; Wait]
+  CHANGE -->|Yes| NEW
+  NEW --> AGENTS[Compose Validated Pipeline and Delegate Real Specialists]
+  REQUEST --> AGENTS
+  AGENTS --> REPORT[Persist Run State, Evidence, Handoff, and Report]
